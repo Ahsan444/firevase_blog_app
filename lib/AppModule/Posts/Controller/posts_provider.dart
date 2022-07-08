@@ -55,22 +55,30 @@ class PostProvider extends ChangeNotifier {
       //waiting for upload to complete
       await Future.value(uploadTask);
       var newUrl = await ref.getDownloadURL();
-    final User? user = auth.currentUser;
-    postRef.child('Post List').child(date.toString()).set({
-      'pId': date.toString(),
-      'pImage': newUrl.toString(),
-      'pTime': date.toString(),
-      'pTitle': titleController.text.toString(),
-      'pDescription': descriptionController.text.toString(),
-      'pEmail': user?.email.toString(),
-      'pUserId': user?.uid.toString(),
-
+      final User? user = auth.currentUser;
+      postRef.child('Post List').child(date.toString()).set({
+        'pId': date.toString(),
+        'pImage': newUrl.toString(),
+        'pTime': date.toString(),
+        'pTitle': titleController.text.toString(),
+        'pDescription': descriptionController.text.toString(),
+        'pEmail': user?.email.toString(),
+        'pUserId': user?.uid.toString(),
       }).then(
         (value) {
           toastMessage('Post uploaded successfully');
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const DashboardScreen()));
+          titleController.clear();
+          descriptionController.clear();
+          image = null;
 
-          Navigator.pop(context);
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (_) => const DashboardScreen(),
+            ),
+          );
+
+          // Navigator.pop(context);
         },
       ).onError(
         (error, stackTrace) {

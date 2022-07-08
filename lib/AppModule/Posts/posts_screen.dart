@@ -117,6 +117,7 @@ class PostsScreen extends StatelessWidget {
                       RoundBtn(title: 'Upload', onPressed: () {
                         if (provider.formKey.currentState!.validate()) {
                           provider.uploadPost(context);
+
                           //provider.uploadPost(context);
                         }
                       }),
