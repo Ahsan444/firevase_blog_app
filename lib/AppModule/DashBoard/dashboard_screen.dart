@@ -13,6 +13,7 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     var auth = FirebaseAuth.instance;
     var providerDash = Provider.of<DataListProvider>(context);
     return Scaffold(
