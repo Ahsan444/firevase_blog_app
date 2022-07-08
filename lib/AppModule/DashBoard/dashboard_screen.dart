@@ -30,8 +30,8 @@ class DashboardScreen extends StatelessWidget {
               },
             ),
             //logout button
-            const SizedBox(
-              width: 10,
+             SizedBox(
+              width: width * 0.01,
             ),
             IconButton(
               icon: const Icon(Icons.exit_to_app),
