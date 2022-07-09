@@ -1,16 +1,6 @@
 # blog_app
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* [Buy me Coffe](https://www.buymeacoffee.com/ahsan44)
+* [linkedin](https://www.linkedin.com/in/ahsan-khan-21198116a/)
+![img1](https://user-images.githubusercontent.com/35272740/178119411-2eaed246-ca66-46ac-a502-f997799cc009.jpg)
+![img2](https://user-images.githubusercontent.com/35272740/178119412-b3ff6519-b4f8-461f-9353-e4a5aaae506b.jpg)
