@@ -13,6 +13,7 @@ class PostsScreen extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: const Text('Upload Post'),
         backgroundColor: Colors.deepOrange,

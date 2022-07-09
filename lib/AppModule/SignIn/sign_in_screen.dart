@@ -15,6 +15,7 @@ class _SignInScreenState extends State<SignInScreen> {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: const Text('Create Account'),
         backgroundColor: Colors.deepOrange,
