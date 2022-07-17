@@ -6,5 +6,7 @@ class Assets {
   static const String imagesLoading = 'images/loading.gif';
   static const String imagesLoading2 = 'images/loading2.gif';
   static const String imagesLoading4 = 'images/loading4.gif';
+  static const String imagesLottieAnim = 'images/lottie_anim.json';
+  static const String imagesSplash = 'images/splash.json';
 
 }

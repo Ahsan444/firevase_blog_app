@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import '../Posts/posts_screen.dart';
 
@@ -94,7 +95,7 @@ class DashboardScreen extends StatelessWidget {
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                   child: FadeInImage.assetNetwork(
-                                    placeholder: 'images/loading4.gif',
+                                    placeholder: '${Lottie.asset('images/lottie_anim.json')}',
                                     //placeholderFit: BoxFit.cover,
                                     placeholderScale: 0.5,
                                     image: '${snapshot.child('pImage').value}',
